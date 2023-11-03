@@ -1,0 +1,19 @@
+<h1>hola a mundo a todos los fanaticos de dragon ball Z</h1>
+
+<hr>
+
+<div class="row">
+  <div class="col">
+    <!-- (onDeletId)="onDeletId(&event)"  -->
+    <!-- <dbz-list (NewAction2)="dbzservce.deleteCharacterById($event)" [characterList]="dbzservce.characters"> </dbz-list> -->
+    <dbz-list (NewAction2)="onDeletCharacter($event)" [characterList]="caracteres"> </dbz-list>
+
+
+  </div>
+
+  <div class="col">
+    <!-- <add-dbz (onNewCharacter2)="dbzservce.onNewCharacter($event)"></add-dbz> -->
+    <add-dbz (onNewCharacter2)="onNewCharacter($event)"></add-dbz>
+
+  </div>
+</div>
